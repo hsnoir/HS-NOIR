@@ -1,21 +1,23 @@
-/* Reset & Basic Setup */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fefefe;
+  background-color: #fafafa;
   color: #222;
   line-height: 1.6;
 }
+
 .container {
   width: 85%;
   margin: auto;
 }
 
-/* Header & Logo */
+/* Header & Navigation */
 header {
   background-color: #000;
   color: #fff;
@@ -42,13 +44,13 @@ nav ul li a {
   transition: 0.3s;
 }
 nav ul li a:hover {
-  color: #c39b63;
+  color: #c9a16c;
 }
 
 /* Hero Section */
 #hero {
   background: url("https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
-  height: 450px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +60,7 @@ nav ul li a:hover {
 }
 #hero h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 50px;
+  font-size: 56px;
   margin-bottom: 15px;
 }
 #hero p {
@@ -66,8 +68,8 @@ nav ul li a:hover {
   margin-bottom: 25px;
 }
 .btn {
-  background-color: #c39b63;
-  padding: 12px 28px;
+  background-color: #c9a16c;
+  padding: 14px 30px;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -75,24 +77,24 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 .btn:hover {
-  background-color: #a67c52;
+  background-color: #b28e57;
 }
 
-/* Shop Section */
+/* Shop / Products Section */
 #shop {
   background-color: #fff;
   padding: 60px 0;
 }
 #shop h2 {
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
   margin-bottom: 40px;
   font-family: 'Playfair Display', serif;
 }
 .products {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .product {
   background-color: #fff;
@@ -101,7 +103,7 @@ nav ul li a:hover {
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   transition: transform 0.3s;
 }
 .product:hover {
@@ -109,7 +111,7 @@ nav ul li a:hover {
 }
 .product img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .product h3 {
   font-size: 22px;
@@ -119,7 +121,7 @@ nav ul li a:hover {
 .product p {
   font-size: 20px;
   font-weight: bold;
-  color: #c39b63;
+  color: #c9a16c;
   margin: 12px 0;
 }
 
@@ -145,13 +147,18 @@ nav ul li a:hover {
 /* Contact Section */
 #contact {
   padding: 60px 0;
-  background-color: #fefefe;
+  background-color: #fafafa;
 }
 #contact h2 {
   text-align: center;
   font-size: 38px;
   margin-bottom: 25px;
   font-family: 'Playfair Display', serif;
+}
+#contact p {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 form {
   width: 60%;
@@ -171,7 +178,7 @@ form textarea {
   font-size: 16px;
 }
 form button {
-  background-color: #c39b63;
+  background-color: #c9a16c;
   color: #fff;
   padding: 14px 28px;
   border: none;
@@ -181,7 +188,7 @@ form button {
   transition: 0.3s;
 }
 form button:hover {
-  background-color: #a67c52;
+  background-color: #b28e57;
 }
 
 /* Footer */
@@ -194,7 +201,7 @@ footer {
   font-size: 14px;
 }
 
-/* Responsive for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
   .products {
     flex-direction: column;
